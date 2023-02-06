@@ -37,6 +37,24 @@
     </section>
     
 
-    <script src="main.js"></script>
+    <script type="text/javascript" >
+      let myObj = {
+        name : "aayush",
+        email : "aayush@gmail.com"
+      };
+      let myObj_serialized = JSON.stringify(myObj);
+      //console.log(myObj_serialized)
+      localStorage.setItem("myObj", myObj_serialized);
+      console.log(localStorage);
+      let myObj1 = {
+        name2 : "ayush",
+        email2 : "ayush@gmail.com"
+      };
+      let myObj_serialized1 = JSON.stringify(myObj1);
+      //console.log(myObj_serialized)
+      localStorage.setItem("myObj1", myObj_serialized1);
+      console.log(localStorage);
+      
+    </script>
   </body>
 </html>
